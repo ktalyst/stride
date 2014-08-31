@@ -1,25 +1,42 @@
-## Laravel PHP Framework
+## Stride 
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+### Informations en Français sur le framework
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+[Documentation en français](http://laravel.fr) 
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+##Inclus
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+* Twitter Bootstrap pour la mise en forme des pages (design responsive)
+* JQuery pour le bon fonctionnement de Bootstrap
+* Fichiers de traduction laravel (https://github.com/laravel-france/laravel-lang-fr)
+* Pages d'erreur : 403, 404, 500 et 503
+* Back-end : Gestion des utilisateurs
+* 4 rôles : administrateur, manager, responsable et utilisateur de base
+* Front-end : Navigation dans les sections, connexion , inscription, renouvellement du mot de passe de l'utilisateur
+* Pages du site : accueil
 
-## Official Documentation
+##Installation
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+1. Installation classique de Laravel 4
+2. Créer une base de données et renseigner le fichier *app/config/database.php*
+3. **php artisan migrate** pour créer les tables
+4. **php artisan db:seed** pour ajouter des enregistrements
 
-### Contributing To Laravel
+## Fonctionnalités à apporter
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+* Terminer les validations des formulaires (notamment lors de l'ajout dynamique)
+* Récupérer les "anciennes" affectations si il y en a, lors de l'affectation des ressources
+* Revoir le modèle Contrat - Catalogue - Datecontrat
+* Rajouter un historique pour le CRJS
+* Terminer la partie financière
+* Vérifier les charges entrées lors de l'affectation des ressources aux taches
+* Améliorer les requêtes à la base de données, surtout au niveau de l'affectation des ressources
+* Terminer l'historique sur la notation des ressources
+* Ajouter la possibilité de voir les taches qui ne sont pas attribuées et se les attribuer en tant qu'utilisateur
+* Ajouter le calcul du réestimé
+* Terminer la validation d'un step
+* Ajouter une relation MorphTo entre tachestep et (tacheservice, tachetransverse, tacheexterne)
+* Possibilité de mettre à jour les unit workload
+* Terminer la traduction
 
-### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
